@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="/public/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="/public/js/main.js"></script>
+    <title>Claudia To Do</title>
+</head>
+
+<body>
+	<div class="container">
+        <div class="logo">
+            <img src="/public/assets/android-chrome-256x256.png" alt="" width="50px" height="50px">
+        </div>
+		<h2 class="siteText">TODO</h2>
+        <form onsubmit="return false">
+            <input id="title" type="text" placeholder="Task Title" name="">
+            <select name="categories" id="category">
+                <option id="wellbeing" value="1">WellBeing</option>
+                <option id="work" value="2">Work</option>
+                <option id="school" value="3">School</option>
+                <option id="self-dev" value="4">Self Development</option>
+                <option id="errands" value="5">Errands</option>
+            </select>
+
+            <input type="date" id="dueDate"/>
+
+            <p>
+                    <input type="checkbox" name="activateDoDate" id="" >
+                    Set a Do Date
+                </p>
+
+            <input type="date" id="doDate"/>
+
+            <textarea id="description" placeholder="Descrtipion"></textarea>
+            <button id="add-task" onclick="addTask();" >add</button>
+            <input type="reset" class="button2" value="Clear Form" />
+
+        </form>
+
+     
+</body>
+
+</html>
