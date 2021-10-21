@@ -12,22 +12,52 @@
     <title>Claudia To Do</title>
 </head>
 <body onload="viewTasks()">
+
 	<div class="container">
+        
+        <!-- header -->
         <div class="logo">
             <img src="public/assets/android-chrome-256x256.png" alt="" width="50px" height="50px">
         </div>
 		<h2 class="siteText">TODO</h2>
        
-
-        <div id="taskView">
-           
-                
          
+        <div id="taskView">
         </div>
-		
 
-	</div>
+        <!-- bottom nav -->
+        <div id="nav">
+            <nav>
+                 <ul>
+                    <li>
+                        <a class="nav-item" href="#">
+                            <img src="public/assets/category.png" class="icon">
+                            <br>
+                            <span>categories</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#">
+                            <img src="public/assets/list.png" class="icon">
+                            <br>
+                            <span>tasks</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#">
+                            <img src="public/assets/add2.png" class="icon">
+                            <br>
+                            <span>new task</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>  <!--  end nav -->
+	       
+</div>
 
+
+   
 </body>
 
 <script type="text/javascript" src="/public/js/main.js"></script>
