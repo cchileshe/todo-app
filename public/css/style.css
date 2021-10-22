@@ -44,8 +44,8 @@ body {
 	width: 400px;
 	margin: 10px auto 100px;
 	background-color:#fff;
-	
-	min-height: 700px;
+    
+	height: 700px;
     position: relative;
     
 }
@@ -308,6 +308,8 @@ li > input[type="checkbox"] {
 
 div#taskView{
     margin-top:3em;
+    overflow-x: hidden;
+    overflow-y: auto;
  
 }
 div.categoryList{
@@ -334,12 +336,14 @@ div#taskView h2{
 
 /* check boxes */
 .checkbox {
-    display: inline-flex;
     cursor: pointer;
     position: relative;
     width: 100%;
     margin-bottom: 1.5em;
     font-size: 14px;
+    display: grid;
+    grid-template-columns: .5fr 4fr 1fr;
+    
 }
 
 li > input:active {
@@ -380,6 +384,10 @@ li > input:active {
       
   }
   
+ .completed-tasks span {
+	text-decoration: line-through;
+	color: #a0a0a0;
+}
   /* sub nav */
 /* More Button / Dropdown Menu */
 div.more{

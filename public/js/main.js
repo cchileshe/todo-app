@@ -104,6 +104,19 @@ function getTasksFromStorage() {
 }
 
 
+//Mark task completed
+function taskCompleted(){
+    const checkBox = document.getElementById('');
+    checkBox.addEventListener("change", updateTextStyle);
+    updateTextStyle();
+    
+    function updateTextStyle() {
+      document.body.className = checkBox.checked ? "" : "blue";
+    }
+// completedTasksHolder.appendChild(listItem);
+//             bindTaskEvents(listItem, taskIncomplete);
+
+}
 
 let visible = false;
 // sub nav controller
@@ -174,7 +187,7 @@ function viewTasks(){
             taskActions.className='more';
             taskActions.addEventListener('click', showMenu, false)
 
-            let moreBtn = document.createElement("button");
+            let moreBtn = document.createElement("div");
                 moreBtn.id = 'more-btn';
                 moreBtn.className = 'more-btn';
             taskActions.appendChild(moreBtn);
